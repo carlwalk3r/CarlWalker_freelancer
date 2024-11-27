@@ -1,0 +1,318 @@
+:root { /*custom properties son las variables css */
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #5bc254;
+    --secundario: #608dad;
+    --gris: #9c9c9c;
+    --grisclaro:#dfe9f3;
+    --fuenteprincipal: 3.8rem;
+
+
+}
+
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box; /*Para que el padding y el border no afecten el ancho y el alto de los elementos */
+    scroll-snap-type: y mandatory; /*Para que el scroll sea vertical */
+    scroll-behavior: smooth; /*Hace que el desplazamiento de la página al seguir un enlace de ancla (como #formulario) sea suave y gradual, no instantaneo*/
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit; /*Para que el padding y el border no afecten el ancho y el alto de los elementos */
+
+/* el asterisco indica que se seleccionaran todos los elementos del html y a todos estos elementos se les aplicara el box-sizing:border-box */
+}
+
+body {
+    font-size: 16px; /* 16px = 1.6rem */
+
+    font-family: "Krub", sans-serif;   /*Fuente de google fonts */
+    /*ponemos esta linea en el body para que se aplique la fuente a todo el documento */
+
+    background-image: linear-gradient(to top,var(--grisclaro) 0%,var(--blanco) 100%); /*Color de fondo */; /*Para que el fondo sea un degradado */
+
+}
+
+/**BOTONES**/
+/**-----------------------------------------------------------------------------------------------------------------------**/
+.button{ /*Para los botones */
+
+    font-weight: bold; /*Para que la fuente sea negrita */
+    text-align: center; /*Para que el texto se ponga en el centro */
+    font-size: 2rem; /*Tamaño de la fuente */
+    text-decoration: none; /*Para quitarle el subrayado a los links */
+    text-transform: uppercase; /*Para que el texto se ponga en mayusculas */
+    color: var(--oscuro); /*Color de la fuente */
+    background-color: var(--blanco); /*Color de fondo */
+    padding: 1rem 3rem; /*Para que el boton tenga un padding de 1rem arriba y abajo y 3rem a los lados */
+    margin-top: 2rem; /*Margen arriba */
+    border-radius: .5rem; /*Para que el boton tenga las esquinas redondeadas */
+    width: 90%; /*Ancho del boton */
+    border: none; /*Para que el borde del boton sea nulo */
+}   
+
+.button:hover{ /*Cuando se pase el mouse por encima */
+
+    background-color: var(--primario); /*Color de fondo cuando se pase el mouse por encima */
+    color: var(--oscuro); /*Color de la fuente cuando se pase el mouse por encima */
+
+}
+
+@media (min-width: 768px) { /*Si el ancho de la pantalla es mayor a 768px, entonces se aplicara el codigo que esta dentro de las llaves */
+
+    .button{ /*Para los botones */
+
+        width: auto; /*Para que el boton tenga un ancho automatico */
+    }
+    
+}
+
+.button:hover{ /*Cuando se pase el mouse por encima */
+    cursor: pointer; /*Para que el cursor sea un puntero */
+
+
+}
+
+/** UTILIDADES **/
+/**-----------------------------------------------------------------------------------------------------------------------**/
+
+.w-sm-100{
+    width: 100%; /*Ancho del elemento */
+
+
+}
+
+@media (min-width: 768px) { /*Si el ancho de la pantalla es mayor a 768px, entonces se aplicara el codigo que esta dentro de las llaves */
+
+    .w-sm-100{
+        width: auto; /*Ancho del elemento */
+    }
+    
+}
+
+.flex{
+
+    display: flex; /*Para que los elementos se pongan en fila */
+}
+
+
+
+/*TITULOS*/
+/**-----------------------------------------------------------------------------------------------------------------------**/
+h1{ 
+    font-size: 3.8rem; /*Tamaño de la fuente */
+}
+
+h2{ 
+    font-size: 2.8rem; /*Tamaño de la fuente */
+}
+
+h3{ 
+    font-size: 1.8rem; /*Tamaño de la fuente */
+}
+
+h1, h2, h3{ /*Para que los titulos tengan el mismo margen */
+    text-align: center; /*Para que el texto se ponga en el centro */
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+
+
+/**NAVEGACION PRINCIPAL**/
+/**-----------------------------------------------------------------------------------------------------------------------**/
+.navegacionprincipal{ /*Para el menu de navegacion */
+    background-color: var(--secundario);
+
+    
+}
+
+.contenedor{ /*Para centrar el contenido */
+
+   max-width: 120rem; 
+   /*Para que el contenido no se expanda mas de 120rem */
+    margin: 0 auto; 
+    /* text-align: center; Para que el texto se ponga en el centro */
+    
+
+}
+
+.nav-bg{ /*Para el menu de navegacion */
+    background-color: var(--secundario);  /*Color de fondo */
+
+}
+
+.navegacionprincipal{
+
+    display: flex; /*Para que los elementos se pongan en fila */
+    flex-direction: column; /*Para que los elementos se pongan en columna */
+   
+}
+
+/*Para el menu de navegacion en dispositivos moviles */
+/*tablets*/
+@media (min-width: 768px) { /*Si el ancho de la pantalla es mayor a 768px, entonces se aplicara el codigo que esta dentro de las llaves */
+
+    .navegacionprincipal{
+        flex-direction: row; /*Para que los elementos se pongan en fila */
+        justify-content: space-between; /*Para que los elementos se pongan en los extremos */ 
+    }
+
+    
+}
+
+.navegacionprincipal a{
+    display: block; /*Para que los elementos se pongan en bloque */
+    text-align: center; /*Para que el texto se ponga en el centro */
+    text-decoration: none; /*Para quitarle el subrayado a los links */
+    color: var(--blanco); /*Color de los links */
+    font-size: 2rem; /*Tamaño de la fuente */
+    font-weight: bold; /*Para que la fuente sea negrita */
+
+    padding: 1rem; /*Para que el menu de navegacion tenga un padding de 1.5rem arriba y abajo y 0 a los lados */
+
+}
+
+.navegacionprincipal a:hover{ /*Cuando se pase el mouse por encima */
+
+    background-color: var(--primario); /*Color de fondo cuando se pase el mouse por encima */
+    color: var(--oscuro); /*Color de la fuente cuando se pase el mouse por encima */
+
+}
+
+/**-----------------------------------------------------------------------------------------------------------------------**/
+
+/*VISTA CENTRAL*/
+/**-----------------------------------------------------------------------------------------------------------------------**/
+
+
+@media (min-width: 768px) {
+    
+    .vista{
+        display: grid; /*Para que los elementos se pongan en grid */
+        grid-template-columns: 50% 50%; /*Para que haya una sola columna */
+        column-gap: 1rem; /*Espacio entre columnas */
+        grid-template-rows: auto auto; /*Para que haya tres filas de igual tamaño */
+        margin: 10rem 0; /*Margen arriba y abajo */
+    }
+
+    .vista img{
+        width: 100%; /*Ancho de la imagen */
+        margin-left: 10rem; /*Margen izquierdo */
+
+    }
+    
+}
+
+
+
+
+
+
+.formar-parte{
+    display: flex;  /*Para que los elementos se pongan en fila */
+    flex-direction: column; /*Para que los elementos se pongan en columna */
+    align-items: center; /*Para que los elementos se pongan en el centro */
+
+
+}
+
+.formar-parte p{
+    line-height: 2; /*Altura de la linea */
+    text-align: center; /*Para que el texto se ponga en el centro */
+    margin-left: 6rem; /*Margen izquierdo */
+    size: 20rem; /*Tamaño de la fuente */
+}
+
+
+
+/**FORMULARIO**/
+/**-----------------------------------------------------------------------------------------------------------------------**/
+.formulario{
+    background-color: var(--secundario); /*Color de fondo */
+
+    width: min(60rem, 100%); /*Ancho del formulario */
+    /*utiliza el valor mas pequeno entre 60 rem o el 100% */
+
+    padding: 2rem; /*Para que el formulario tenga un padding de 2rem */
+    margin: 0 auto; /*Para que el formulario se ponga en el centro */
+
+    /*margin 0 auto conviene utilizarlo cuando se tenga un elemento como un formulario y cuyo padre no sea un flexbox o un grid */ 
+
+    border-radius: 1rem; /*Para que el formulario tenga las esquinas redondeadas */
+    
+
+
+}
+
+.formulario fieldset{
+    border: none; /*Para que el borde del fieldset sea nulo */
+}
+
+.formulario legend{    
+    font-size: 2rem; /*Tamaño de la fuente */
+    color: var(--blanco); /*Color de la fuente */
+    font-weight: bold; /*Para que la fuente sea negrita */
+    text-align: center; /*Para que el texto se ponga en el centro */
+    text-transform: uppercase; /*Para que el texto se ponga en mayusculas */
+    margin-bottom: 2rem; /*Margen abajo */
+
+}
+
+.campo{
+   margin-bottom: 1rem; /*Margen abajo */
+
+}
+
+.contenedor-campo{
+ 
+
+}
+
+.campo label{
+    color: var(--blanco); /*Color de la fuente */
+    font-weight: bold; /*Para que la fuente sea negrita */
+    margin-bottom: .5rem; /*Margen abajo */
+    display: block; /*Para que los elementos se pongan en bloque */
+
+}
+
+.campo textarea{
+    height: 20rem; /*Altura del textarea */
+}
+
+.input2complete{
+    width: 100%; /*Ancho del input */
+    padding: 1.5rem; /*Para que el input tenga un padding de 1rem */
+    border: none; /*Para que el borde del input sea nulo */
+    border-radius: .5rem; /*Para que el input tenga las esquinas redondeadas */
+    margin-bottom: 2rem; /*Margen abajo */
+
+}
+
+@media (min-width: 768px) {
+    .contenedor-campos{
+        display:grid; /*Para que los elementos se pongan en grid */
+        column-gap: 1rem; /*Espacio entre columnas */
+        grid-template-columns:50% 50%; /*Para que haya dos columnas de igual tamaño */
+        grid-template-rows: auto auto 20 rem; /*Para que haya tres filas de igual tamaño */
+        
+    }
+
+    .campo:nth-child(3), .campo:nth-child(4){      /*pseudoselector, en este caso, tenemos varios elementos con el mismo nombre, con esta herramienta podemos seleccionar uno en concreto entre todos*/
+       
+        grid-column: 1 / 3; /*Para que el campo se ponga en las dos columnas */
+    }
+}
+
+
+
+
+/**FOOTER**/
+/**-----------------------------------------------------------------------------------------------------------------------**/
+.footer{
+    text-align: center; /*Para que el texto se ponga en el centro */
+}

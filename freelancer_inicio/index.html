@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- aplica un encoding para tildes y eñes -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- para que funcione en navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- para que se adapte a cualquier dispositivo -->
+
+    <title>Diseñador freelancer</title> <!-- titulo de la pagina -->
+    
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <!-- normalize es para que todos los navegadores tengan el mismo estilo por defecto -->
+
+
+    <!--ASI SE VERIA EL CODIGO CSS UTILIZANDO LA ETIQUETA STYLE-->
+    <!-- Al h1 le di color y una alienacion-->
+
+    <!--
+    <style>
+        h1{
+            color: purple;
+            text-align: center;
+        }
+    </style>
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    
+     <!-- para enlazar una fuente de google fonts con el html -->
+    <!--rel="stylesheet"  para indicar que es un archivo de estilos -->
+
+    
+
+    <link rel="preload" href="css/styles1.css" as="style"> <!-- para cargar el archivo css antes de que se cargue la pagina -->
+
+    <link href="css/styles1.css" rel="stylesheet"> <!-- para enlazar el archivo css con el html -->
+    <!--rel="stylesheet"  para indicar que es un archivo de estilos -->
+
+</head>
+<body>
+   
+    <header>
+        <h1 class="titulo"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-apps-filled" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M9 3h-4a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+            <path d="M9 13h-4a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+            <path d="M19 13h-4a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+            <path d="M17 3a1 1 0 0 1 .993 .883l.007 .117v2h2a1 1 0 0 1 .117 1.993l-.117 .007h-2v2a1 1 0 0 1 -1.993 .117l-.007 -.117v-2h-2a1 1 0 0 1 -.117 -1.993l.117 -.007h2v-2a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+          </svg> Carlitos' World <span>Solutions</span></h1> 
+        
+        <!--span para darle estilo a una parte del texto -->
+
+
+    </header>
+
+
+    <div class="nav-bg">
+    <nav class="navegacionprincipal contenedor"> <!-- barra de navegacion -->
+ <!-- <a></a> anker --> <!-- enlaces -->
+<!-- <a href=' '></a> atributo. Entre las comillas se coloca hacia donde ira al darle click--> 
+
+
+        <a href="index.html">Inicio</a>  
+        
+        <a href="nosotros.html">Servicios</a>
+
+        <a href="nosotros.html">Nosotros</a>
+
+        <a href="unete.html">Únete</a>
+
+    </nav>
+    </div>
+
+
+
+    <!-- <img src="img/hero.jpg"> 
+        Para agregar imagenes, se utiliza la etiqueta <img> y se coloca el atributo src=" " para indicar la ruta de la imagen. -->
+    
+
+
+
+    <section class="hero">
+       
+       <div class="contenido-hero"> 
+            <h2>Diseño y Desarrollo <span>Freelancer</span></h2>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin-pin" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                <path d="M12.783 21.326a2 2 0 0 1 -2.196 -.426l-4.244 -4.243a8 8 0 1 1 13.657 -5.62" />
+                <path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+                <path d="M19 18v.01" />
+              </svg>
+            Asuncion Paraguay</p>
+
+            <!-- <svg></svg> es para agregar iconos importados de internet -->
+                <p>La solucion que necesitas a un solo click</p>
+                
+              <!--Un simple enlace, no es necesario crear una barra de navegacion-->
+                <a class="button" href="#contact-form">Contactar</a> 
+              
+                <!-- El numeral (#) es el símbolo que se utiliza para denotar una referencia a un identificador (ID) dentro de la misma página. 
+                 Sin Numeral: Un enlace como <a href="page.html"> lleva a otra página o URL completa.
+                Con Numeral: Un enlace como <a href="#contact-form"> lleva a una sección específica dentro de la misma página en la que el enlace está presente.-->
+
+            </div>
+    </section>
+
+
+
+    <main class="contenedor sombra">
+        <h2>Servicios que se Ofrecen</h2>
+
+    <div class="servicios">
+
+        <section class="servicio">
+
+            <h3>Diseño Web</h3>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" />
+                    <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                </svg>
+            </div>
+            <p>Integer id ipsum in massa imperdiet luctus sed in quam. Ut a consequat magna. Pellentesque nec mollis purus.Pellentesque ac dolor id ex tempus rhoncus at vel mi.</p>
+        </section>
+        
+        <section class="servicio">
+            <h3>Aplicaciones Web</h3>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android" width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 10l0 6" />
+                    <path d="M20 10l0 6" />
+                    <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0" />
+                    <path d="M8 3l1 2" />
+                    <path d="M16 3l-1 2" />
+                    <path d="M9 18l0 3" />
+                    <path d="M15 18l0 3" />
+                </svg>
+             
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-apple" width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z" />
+                    <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" />
+                </svg>
+            </div>
+            <p>Integer id ipsum in massa imperdiet luctus sed in quam. Ut a consequat magna. Pellentesque nec mollis purus.Pellentesque ac dolor id ex tempus rhoncus at vel mi.</p>
+        </section>
+
+        <section class="servicio">
+        <h3>E commerce</h3>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+                    <path d="M3 10l18 0" />
+                    <path d="M7 15l.01 0" />
+                    <path d="M11 15l2 0" />
+                </svg>
+            </div>
+            <p>Integer id ipsum in massa imperdiet luctus sed in quam. Ut a consequat magna. Pellentesque nec mollis purus.Pellentesque ac dolor id ex tempus rhoncus at vel mi.</p>
+        </section>  
+    </div>
+
+
+
+ 
+    <section>
+     <h2>Contacto</h2>
+
+     <form id="contact-form" class="formulario">
+        <fieldset> <!--para agrupar elementos de un formulario -->
+            <legend> Contactanos llenando el siguiente formulario</legend> <!-- para darle un titulo al formulario -->
+
+            <div class="contenedor-campos">
+                <div class="campo"> <!-- para agrupar elementos de un formulario -->
+                    <label>Nombre</label> <!-- para darle un nombre al campo -->
+                    <input class="input2complete" type="text" placeholder="Nombre"> <!-- para agregar un campo de texto -->
+                </div>
+            
+                <div class="campo"> <!-- para agrupar elementos de un formulario -->
+                    <label>Telefono</label> <!-- para darle un nombre al campo -->
+                    <input class="input2complete" type="tel" placeholder="Telefono"> <!-- para agregar un campo de texto -->
+                </div>
+           
+                <div class="campo"> <!-- para agrupar elementos de un formulario -->
+                    <label>Correo</label> <!-- para darle un nombre al campo -->
+                    <input class="input2complete" type="email" placeholder="Correo"> <!-- para agregar un campo de texto -->
+                </div>
+            
+                <div class="campo"> <!-- para agrupar elementos de un formulario -->
+                    <label>Mensaje</label> <!-- para darle un nombre al campo -->
+                    <textarea class="input2complete" placeholder="Mensaje"></textarea> <!-- para agregar un campo de texto -->
+                </div>
+            </div>
+            
+            
+            <div class="alinear-derecha flex"> <!-- para agrupar elementos de un formulario -->
+
+            <!--AMBAS SON MANERAS VALIDAS DE CREAR EL BOTON-->
+            <input class="button w-sm-100" type="submit" value="Enviar">   <!-- para agregar un boton de enviar -->
+
+            <!--obvio, sin la clase button-->
+            <!--<button class="button" type="submit">Cancelar</button> para agregar un boton de enviar --> 
+
+            </div> 
+
+            
+
+
+        </fieldset>
+
+
+     </form>
+    </section>
+</main>    
+
+    <footer class="footer">
+    <p>Todos los derechos reservados. Carlos G. Amarilla Verdun</p>
+    </footer>
+   
+    
+
+</body>
+</html>
